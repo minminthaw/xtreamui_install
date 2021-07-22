@@ -1,0 +1,40 @@
+Load Balancer Install ပြုလုပ်ပါမယ်။
+Load Balancer ကို Auto install လို့တော့ ရပါတယ်။ ဒါပေမယ့် အဲ့နည်းက သင်ပြစရာမလိုလောက်အောင်ကိုလွယ်ပါတယ်။ ဒါပေမယ့် နောက်ပိုင်း သိပ်အဆင်မပြေတော့တာများပါတယ်။ ဒါကြောင့် Manual Install လုပ်နည်းပဲ တင်ပေးပါမယ်။
+Load Balancer တင်မယ့် VPS တော့ အဆင်သင့်ဖြစ်ပါစေ။ 
+Ubuntu 18.04 LTS ဖြစ်ရပါမယ်။ Main server တုန်းကလည်း အတူတူပါပဲ.
+
+ကျွန်တော် ဒီ Command ကို သက်သက် Text လုပ်ပေးပါမယ်
+vps တွေ အသစ်ဆိုတာနဲ့ 
+apt-get update -y ကို run ပေးပါ
+
+wget https://raw.githubusercontent.com/minminthaw/xtreamui_install/main/install.py
+apt-get install python -y
+sudo python install.py
+
+Load Balancer တင်မှာမို့ LB သို့မဟုတ် lb လို့ ရိုက်ထည့်ပါ
+Main Server IP Address က Admin Panel ရဲ့ ip address ထည့်ရမှာပါ
+195.201.21.13 ဖြစ်တဲ့အတွက် အဲ့တာ ထည့်ပေးရပါမယ်
+Mysql Password က ကျွန်တော် အရေးကြီးလို့ သိမ်းခိုင်းထားတဲ့ဟာပါ။
+
+Manual load balancer တင်တဲ့အခါ Admin Panel မှာ အရင် server add ပေးရပါတယ်။ 
+ခုလုပ်ပြတဲ့အတိုင်း လိုက်လုပ်လိုက်ပါ
+2 က load balancer id ပါ
+စမှာလားဆိုတော့ yes ပေါ့။ အဲ့တော့ y ပေါ့
+
+ခဏစောင့်ပါ။ နည်းနည်း ကြာပါတယ်။
+ဒါဆိုရင် ပြီးသွားပါပြီ။
+အချိန် ခဏစောင့်လိုက်ပါ။ Admin Panel မှာ ပေါ်လာပါလိမ့်မယ်
+
+ဒါဆိုရင် load balancer တင်တာ ပြီးစီးပါပြီ။
+
+တစ်ခု သတိထားရမှာ ရှိပါတယ်။ Server ကို Restart ချတဲ့အခါ admin panel ကတော့ တက်လာပေမယ့် Load Balancer တွေကျ တက်မလာတာတွေ၊ Offline ဖြစ်နေတာတွေ ရှိတတ်ပါတဲ့။ အဲ့အချိန်ကျရင်
+sudo /home/xtreamcodes/iptv_xtream_codes/start_services.sh
+
+အဲ့ Command ကို load balancer vps မှာ run ပေးရပါမယ်။ အချိန် ၅ မိနစ်လောက်မှ တက်မလာရင် အဲ့ command ကို run ပေးပါ
+
+နောက်တစ်ချက် - 
+load balancer ထည့်ပြီးပြီဆိုတော့ အဲ့ server နဲ့ stream တွေ run ကြည့်ရအောင်။ ရိုးရိုးလေးပါ။
+ခုက Main Server ပေါ်မှာ Fox Movie Premium က run နေတာနော်။ အဲ့တာကို Server မှာ Load Balancer 1 ရွေးမယ်။ Restart on Edit ဖွင့်ပြီး Edit နှိပ်မယ်။
+ဒါဆို Load Balancer ပေါ် ရောက်သွားပါပြီ။
+
+ဒါဆိုရင်တော့ ခုအပိုင်းကတော့ ပြီးပါပြီ။
