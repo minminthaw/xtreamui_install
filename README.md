@@ -1,4 +1,4 @@
-<b>This installation is tested on Ubuntu 18.04 LTS(By Tech Online Class)</b>
+<b><align = center>This installation is tested on Ubuntu 18.04 LTS(By Tech Online Class)</b>
 
 sudo apt-get update && sudo apt-get upgrade -y</br>
 sudo apt-get install libxslt1-dev libcurl3 libgeoip-dev python -y</br>
