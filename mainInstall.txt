@@ -1,0 +1,28 @@
+IPTV Server ဖြစ်တဲ့ Xtream UI ကို VPS ပေါ်မှာ တင်ပါမယ်။
+မိမိရဲ့  VPS ကို ဝင်ပြီးသားဖြစ်ပါစေ။
+Github မှာ ဒီ Project ကို ကျွန်တော်တို့ရဲ့ Server နဲ့ ချိတ်ဆက်ပြီးတော့ တင်ထားပါတယ်။ 
+VPS ပေါ်ကနေ စပါမယ်။
+Copy ကူးထားတာကို Putty မှာ Paste ချတာက 
+Shift + Insert ဖြစ်ပါတယ်။ ပြီးတဲ့အထိ ခဏစောင့်ပါ
+Main လား၊ Load Balancer လား၊ Update လုပ်မှာလား မေးပါတယ်။
+
+Main admin panel တင်မှာမို့ MAIN ဒါမှမဟုတ် main လို့ ရိုက်ပြီး Enter ခေါက်ပါ
+
+စမှာလား မေးပါတယ်။ Yes or No ဖြေရုံပါပဲ။ Linux မှာ Yes ဆိုရင် y လို့ ရိုက်ပြီး No ဆိုရင် n လို့ ရိုက်ပါတယ်။ y လို့ရိုက်ပါမယ်။
+
+ဒီအဆင့်မှာ နည်းနည်းကြာပါတယ်။
+မိမိထားလိုတဲ့ MYSQL Password ကို မေးပါတယ်။ ထားချင်တဲ့ Password ရိုက်ထည့်ပေးလိုက်ပါ။
+
+y ပဲ ထပ်ထည့်ပါ
+Install လုပ်လို့ပြီးပါပြီ။ 
+
+PhpMyadmin Password - RGH2XV68471SX7Gpzum
+
+Admin Panel Url - http://195.201.21.13:25500
+
+Default Username & Password - admin/admin
+
+PHPMyadmin Password ကို သေသေချာချာသိမ်းထားပါ။ အရေးကြီးပါတယ်။
+ဒါဆို Admin Panel ကို သွားကြည့်ရအောင်
+
+ဒါဆိုရင် Xtream UI IPTV Server တင်လို့ပြီးပါပြီ။
