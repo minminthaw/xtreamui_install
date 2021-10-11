@@ -230,7 +230,7 @@ def modifyNginx():
         rFile.close()
 
 if __name__ == "__main__":
-    printc("Xtream UI - Installer Mirror", col.OKGREEN, 2)
+    printc("Xtream UI - Installer(by Pro TV)", col.OKGREEN, 2)
     print "%s │ NOTE: this is a forked mirror of original installer from https://xtream-ui.com/install/install.py %s" % (col.OKGREEN, col.ENDC)
     print "%s │ Check out the mirror repo: https://bitbucket.org/emre1393/xtreamui_mirror %s" % (col.OKGREEN, col.ENDC)
     print " "
