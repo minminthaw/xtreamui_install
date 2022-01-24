@@ -5,7 +5,7 @@ from itertools import cycle, izip
 from zipfile import ZipFile
 from urllib2 import Request, urlopen, URLError, HTTPError
 
-rDownloadURL = {"main": "https://mmsport.live/main_xtreamcodes_reborn.tar.gz", "sub": "https://mmsport.live/sub_xtreamcodes_reborn.tar.gz"}
+rDownloadURL = {"main": "https://tz.mtr8k.com/main_xtreamcodes_reborn.tar.gz", "sub": "https://tz.mtr8k.com/sub_xtreamcodes_reborn.tar.gz"}
 rPackages = ["libcurl3", "libxslt1-dev", "libgeoip-dev", "e2fsprogs", "wget", "mcrypt", "nscd", "htop", "zip", "unzip", "mc", "libjemalloc1", "python-paramiko", "mysql-server"]
 rInstall = {"MAIN": "main", "LB": "sub"}
 rUpdate = {"UPDATE": "update"}
@@ -90,9 +90,9 @@ def install(rType="MAIN"):
 def update(rType="MAIN"):
     if rType == "UPDATE":
         printc("Enter the link of release_xyz.zip file:", col.WARNING)
-        rlink = raw_input('Example: https://mmsport.live/release_22f.zip\n\nNow enter the link:\n\n')
+        rlink = raw_input('Example: https://tz.mtr8k.com/release_22f.zip\n\nNow enter the link:\n\n')
     else:
-        rlink = "https://mmsport.live/release_22f.zip"
+        rlink = "https://tz.mtr8k.com/release_22f.zip"
         printc("Installing Admin Panel")
     hdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -193,13 +193,13 @@ def configure():
     except: pass
     if rType == "MAIN": 
         # edited these 2 files return api response without main server ip, it is usefull if you use a proxy in front of your main server.
-        os.system("mv /home/xtreamcodes/iptv_xtream_codes/wwwdir/panel_api.php /home/xtreamcodes/iptv_xtream_codes/wwwdir/.panel_api_original.php && wget -q https://mmsport.live/panel_api.php -O /home/xtreamcodes/iptv_xtream_codes/wwwdir/panel_api.php")
-        os.system("mv /home/xtreamcodes/iptv_xtream_codes/wwwdir/player_api.php /home/xtreamcodes/iptv_xtream_codes/wwwdir/.player_api_original.php && wget -q https://mmsport.live/player_api.php -O /home/xtreamcodes/iptv_xtream_codes/wwwdir/player_api.php")
+        os.system("mv /home/xtreamcodes/iptv_xtream_codes/wwwdir/panel_api.php /home/xtreamcodes/iptv_xtream_codes/wwwdir/.panel_api_original.php && wget -q https://tz.mtr8k.com/panel_api.php -O /home/xtreamcodes/iptv_xtream_codes/wwwdir/panel_api.php")
+        os.system("mv /home/xtreamcodes/iptv_xtream_codes/wwwdir/player_api.php /home/xtreamcodes/iptv_xtream_codes/wwwdir/.player_api_original.php && wget -q https://tz.mtr8k.com/player_api.php -O /home/xtreamcodes/iptv_xtream_codes/wwwdir/player_api.php")
     if not os.path.exists("/home/xtreamcodes/iptv_xtream_codes/tv_archive"): os.mkdir("/home/xtreamcodes/iptv_xtream_codes/tv_archive/")
     os.system("ln -s /home/xtreamcodes/iptv_xtream_codes/bin/ffmpeg /usr/bin/")
     os.system("chattr -i /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb > /dev/null")
-    os.system("wget -q https://mmsport.live/GeoLite2.mmdb -O /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb")
-    os.system("wget -q https://mmsport.live/pid_monitor.php -O /home/xtreamcodes/iptv_xtream_codes/crons/pid_monitor.php")
+    os.system("wget -q https://tz.mtr8k.com/GeoLite2.mmdb -O /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb")
+    os.system("wget -q https://tz.mtr8k.com/pid_monitor.php -O /home/xtreamcodes/iptv_xtream_codes/crons/pid_monitor.php")
     os.system("chown xtreamcodes:xtreamcodes -R /home/xtreamcodes > /dev/null")
     os.system("chmod -R 0777 /home/xtreamcodes > /dev/null")
     os.system("chattr +i /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb > /dev/null")
