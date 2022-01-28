@@ -1,0 +1,39 @@
+How to Change Nginx Ports Manually?
+
+
+WARNING: Nginx ports must be same in database and nginx.conf file for each server.
+
+
+Go to Manage Servers page and change ports of a server,
+
+Then connect to your server with ssh client or winscp to 
+modify nginx.conf files manually with a text editor.
+
+
+
+There are 2 nginx.conf files,
+- /home/xtreamcodes/iptv_xtream_codes/nginx/conf/nginx.conf
+ -this one has http broadcast and admin panel server blocks
+ 
+- /home/xtreamcodes/iptv_xtream_codes/nginx_rtmp/conf/nginx.conf 
+ -this one has rtmp config.
+
+
+Edit ports and save the config files.
+
+
+Since R22B, you can change broadcasting ports from panel /Manage Servers / Edit Server / Advanced page.
+
+And reload nginx config with this command.
+
+sudo /home/xtreamcodes/iptv_xtream_codes/nginx/sbin/nginx -s reload
+
+and
+
+sudo /home/xtreamcodes/iptv_xtream_codes/nginx_rtmp/sbin/nginx_rtmp -s reload
+
+Check the ports with,
+
+sudo lsof -i -P -n | grep LISTEN
+
+it is done.
